@@ -1,0 +1,21 @@
+{
+  "name": "ess-thermal-propagation-sim",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "储能舱电池热失控蔓延仿真系统 (TypeScript + WebGPU + WGSL + IndexedDB)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:verify": "tsx src/test/runVerify.ts",
+    "test:perf": "tsx src/test/perf.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@webgpu/types": "^0.1.74",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
